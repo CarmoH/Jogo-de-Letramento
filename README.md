@@ -20,5 +20,5 @@ O jogo tem como foco servir como uma **ferramenta de apoio para professores**, a
 ---
 
 ## 🛠️ Tecnologias utilizadas
-- **Unity** (motor de jogo)  
-- **C#** (linguagem de programação)  
+- **Unity** 
+- **C#**  
