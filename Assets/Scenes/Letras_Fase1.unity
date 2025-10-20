@@ -411,7 +411,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2261,6 +2261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1007083318}
+  acertos: 0
+  totalAcertosNecessarios: 4
+  cenaVitoria: TelaVitoria
 --- !u!4 &1699825037
 Transform:
   m_ObjectHideFlags: 0

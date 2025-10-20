@@ -40,6 +40,7 @@ public class Drop : MonoBehaviour, IDropHandler
 
                 dragged.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
 
+                GameManager.instance.AddAcerto();
 
                 if (personagemAnimator != null)
                 {
