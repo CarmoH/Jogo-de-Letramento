@@ -12,17 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: cdeeecff1124f6f42806ae7f735b36e3
   - enabled: 1
-    path: Assets/Scenes/MenuP.unity
+    path: Assets/Scenes/MenuL.unity
     guid: 135465d1b9d964f4f99e36cec9fef775
   - enabled: 1
-    path: Assets/Scenes/FimDeJogoL.unity
+    path: Assets/Scenes/MenuS.unity
+    guid: 82ea90674f1c11449892e4478d6780f1
+  - enabled: 1
+    path: Assets/Scenes/SFase1.unity
+    guid: 07241b90781a7e04e82279db888fd503
+  - enabled: 1
+    path: Assets/Scenes/SFase2.unity
+    guid: 9301eebd6027085449f670776a9b6182
+  - enabled: 1
+    path: Assets/Scenes/MenuP.unity
+    guid: 43b84650bdf846f4cb59e0ef2595c67f
+  - enabled: 1
+    path: Assets/Scenes/FimDeJogo.unity
     guid: cbdb49fb72db913409182ec8cf286c2d
   - enabled: 1
     path: Assets/Scenes/TelaVitoria.unity
     guid: ffb0d1306567bd44c9e71b4cc0052053
-  - enabled: 1
-    path: Assets/Scenes/Silabas_fase1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Pontos.unity
     guid: 259b7a45e38a43b42a7919b9125056e2

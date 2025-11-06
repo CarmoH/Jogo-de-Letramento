@@ -7,9 +7,12 @@ public class PontosPonto : MonoBehaviour
 {
     public static PontosPonto instance;
 
-    private int score = 5; 
-    
+    private int score = 5;
+
     public TextMeshPro scoreText;
+    
+    public int acertos = 0;
+    [SerializeField] private int totalAcertosNecessarios = 3;
 
     private void Awake()
     {
@@ -19,9 +22,17 @@ public class PontosPonto : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Start()
+
+    public void AddAcerto()
     {
-        UpdateScoreText();
+        acertos++;
+
+        if (acertos >= totalAcertosNecessarios)
+        {
+            PlayerPrefs.SetString("UltimaFase", SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("TelaVitoria");
+        }
+
     }
 
     public void SubtractScore(int value)
@@ -37,6 +48,7 @@ public class PontosPonto : MonoBehaviour
             PlayerPrefs.SetString("UltimaFase", SceneManager.GetActiveScene().name); //salva os dados
             SceneManager.LoadScene("FimDeJogo");
         }
+
     }
 
     private void UpdateScoreText()

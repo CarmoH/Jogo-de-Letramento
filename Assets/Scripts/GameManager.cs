@@ -14,11 +14,13 @@ public class GameManager : MonoBehaviour
     public int acertos = 0;
     [SerializeField] private int totalAcertosNecessarios = 3;
 
+
     private void Awake()
     {
         instance = this;
         UpdateScoreText();
     }
+
 
     public void AddAcerto()
     {

@@ -24,7 +24,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Inicio drag");
+        //Debug.Log("Inicio drag");
         posicaoOriginal = rt.anchoredPosition; //Guarda a posição Original
         grupo.alpha = 0.3f;
         grupo.blocksRaycasts = false; //Faz com que o objeto não bloqueie interações com objetos por trás dele
@@ -33,7 +33,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("Fim drag");
+        //Debug.Log("Fim drag");
         grupo.alpha = 1f;
         grupo.blocksRaycasts = true;
 
@@ -53,7 +53,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Apertou");
+        //Debug.Log("Apertou");
     }
     
     public void VoltarParaOrigem() //Faz o objeto voltar a posiçaõ original

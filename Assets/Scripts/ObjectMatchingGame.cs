@@ -62,7 +62,8 @@ public class ObjectMatchingGame : MonoBehaviour
             Collider2D hit = Physics2D.OverlapPoint(endPoint);
             if (hit != null && hit.TryGetComponent(out objectMatchForm) && valoresIguais == objectMatchForm.pegar_valores())
             {
-                Debug.Log("Acertou!");
+                PontosPonto.instance.AddAcerto();
+                //Debug.Log("Acertou!");
 
                 // fixa a linha entre origem e destino
                 Vector3 destino = hit.transform.position;
@@ -73,7 +74,7 @@ public class ObjectMatchingGame : MonoBehaviour
             }
             else
             {
-                Debug.Log("Errou!");
+                //Debug.Log("Errou!");
                 lineRenderer.enabled = false;
                 PontosPonto.instance.SubtractScore(1);
             }

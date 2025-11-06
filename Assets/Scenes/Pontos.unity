@@ -551,6 +551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 784688758}
+  acertos: 0
+  totalAcertosNecessarios: 4
 --- !u!4 &372956415
 Transform:
   m_ObjectHideFlags: 0

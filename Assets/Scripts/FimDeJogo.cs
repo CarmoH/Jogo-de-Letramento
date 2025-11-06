@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class FimDeJogo : MonoBehaviour
 {
-    //ESSE FIM DE JOGO É REFERENTE AS LETRAS
     public void TentarNovamente()
     {
         string faseAnterior = PlayerPrefs.GetString("UltimaFase"); //Le os dados
@@ -16,7 +15,7 @@ public class FimDeJogo : MonoBehaviour
     }
     public void VoltarMenu()
     {
-        SceneManager.LoadScene("MenuP");
+        SceneManager.LoadScene("Menu");
     }
     
 }

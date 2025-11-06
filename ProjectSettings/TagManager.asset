@@ -16,6 +16,24 @@ TagManager:
   - LetraL
   - LetraA
   - Nada
+  - PatoPA
+  - PatoTO
+  - GatoGA
+  - GatoTO
+  - MalaLA
+  - MalaMA
+  - DadoDa
+  - DadoDo
+  - BocaBO
+  - BocaCA
+  - RatoRA
+  - RatoTO
+  - VelaVE
+  - VelaLa
+  - CopoCO
+  - CopoPO
+  - FogoFO
+  - FogoGO
   layers:
   - Default
   - TransparentFX
