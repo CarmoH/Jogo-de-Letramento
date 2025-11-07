@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SFase2.unity
     guid: 9301eebd6027085449f670776a9b6182
   - enabled: 1
+    path: Assets/Scenes/SFase3.unity
+    guid: 2f42e2001427c9644889b03f764068fb
+  - enabled: 1
+    path: Assets/Scenes/SFase4.unity
+    guid: 05d4894faa8b6994789b8dff3e948088
+  - enabled: 1
     path: Assets/Scenes/MenuP.unity
     guid: 43b84650bdf846f4cb59e0ef2595c67f
   - enabled: 1
