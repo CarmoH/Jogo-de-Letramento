@@ -9,7 +9,7 @@ public class PontosPonto : MonoBehaviour
 
     private int score = 5;
 
-    public TextMeshPro scoreText;
+    public TextMeshProUGUI scoreText;
     
     public int acertos = 0;
     [SerializeField] private int totalAcertosNecessarios = 3;
