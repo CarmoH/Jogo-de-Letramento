@@ -1,5 +1,7 @@
 using UnityEngine;
+using System.Collections;
 
+[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(LineRenderer))]
 public class ObjectMatchingGame : MonoBehaviour
@@ -9,10 +11,17 @@ public class ObjectMatchingGame : MonoBehaviour
     private bool isDragging;
     private Vector3 endPoint;
     private ObjectMatchForm objectMatchForm;
+    [SerializeField] private Animator personagemAnimator;
+    [SerializeField] private Animator personagemAnimatorT;
+    private SpriteRenderer spriteRenderer;
+    private Vector3 posicaoOriginal; // posição inicial
+    //private float fadeDuracao = 0.15f; // duração do fade
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        posicaoOriginal = transform.position;
 
         // Configuração inicial do LineRenderer
         lineRenderer.enabled = false; // começa invisível
@@ -25,7 +34,10 @@ public class ObjectMatchingGame : MonoBehaviour
 
         // Garante que a linha renderize acima dos sprites
         lineRenderer.sortingLayerName = "Default";
-        lineRenderer.sortingOrder = 10;
+        lineRenderer.sortingOrder = -1;
+
+        if (personagemAnimator != null) personagemAnimator.gameObject.SetActive(false);
+        if (personagemAnimatorT != null) personagemAnimatorT.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -71,13 +83,35 @@ public class ObjectMatchingGame : MonoBehaviour
                 lineRenderer.SetPosition(1, destino);
 
                 // mantém a linha visível
+
+                if (personagemAnimator != null)
+                {
+                    personagemAnimator.gameObject.SetActive(true);
+                    personagemAnimator.SetTrigger("Comemorar");
+                    StartCoroutine(VoltarParaIdleDepois(2f));
+                }
             }
             else
             {
                 //Debug.Log("Errou!");
                 lineRenderer.enabled = false;
                 PontosPonto.instance.SubtractScore(1);
+
+
+                if (personagemAnimatorT != null)
+                {
+                    personagemAnimatorT.gameObject.SetActive(true);
+                    personagemAnimatorT.SetTrigger("Triste");
+                    StartCoroutine(VoltarParaIdleDepois(2f));
+                }
             }
         }
+    }
+    
+    private IEnumerator VoltarParaIdleDepois(float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+        if (personagemAnimator != null) personagemAnimator.gameObject.SetActive(false);
+        if (personagemAnimatorT != null) personagemAnimatorT.gameObject.SetActive(false);
     }
 }
