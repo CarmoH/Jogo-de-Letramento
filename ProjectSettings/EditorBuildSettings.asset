@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuL.unity
     guid: 135465d1b9d964f4f99e36cec9fef775
   - enabled: 1
+    path: Assets/Scenes/LFase1.unity
+    guid: 8ef161dd042c2994fa2c6501a60f2d9b
+  - enabled: 1
+    path: Assets/Scenes/LFase2.unity
+    guid: c0c4bf399e374b24c9496011cb2ce93f
+  - enabled: 1
     path: Assets/Scenes/MenuS.unity
     guid: 82ea90674f1c11449892e4478d6780f1
   - enabled: 1

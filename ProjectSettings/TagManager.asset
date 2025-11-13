@@ -57,6 +57,9 @@ TagManager:
   - BaleiaBA
   - BaleiaLE
   - BaleiaIA
+  - LetraR
+  - LetraN
+  - LetraJ
   layers:
   - Default
   - TransparentFX
