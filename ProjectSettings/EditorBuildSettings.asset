@@ -21,6 +21,36 @@ EditorBuildSettings:
     path: Assets/Scenes/LFase2.unity
     guid: c0c4bf399e374b24c9496011cb2ce93f
   - enabled: 1
+    path: Assets/Scenes/LFase3.unity
+    guid: 68759b9a422adf34cb583c469aa0bfbd
+  - enabled: 1
+    path: Assets/Scenes/LFase4.unity
+    guid: bb94bd0a4c42a9741af5fe3d4b1edf4a
+  - enabled: 1
+    path: Assets/Scenes/LFase5.unity
+    guid: 29fdf90189395f54a911dad636c6f89b
+  - enabled: 1
+    path: Assets/Scenes/LFase6.unity
+    guid: 4e6dce12c42391845a2370d7f29dcf2b
+  - enabled: 1
+    path: Assets/Scenes/LFase7.unity
+    guid: 5e6a9ed72e148ff4d86dac10a2d13f72
+  - enabled: 1
+    path: Assets/Scenes/LFase8.unity
+    guid: 8862e783de52e1049b9990c25ea26b79
+  - enabled: 1
+    path: Assets/Scenes/LFase9.unity
+    guid: 219b03825415d034b9f0db91bb57bee1
+  - enabled: 1
+    path: Assets/Scenes/LFase10.unity
+    guid: e032195d4bce99542ba1f1d9a5b8721d
+  - enabled: 1
+    path: Assets/Scenes/LFase11.unity
+    guid: b7dd7b039509849408830e522233d8e8
+  - enabled: 1
+    path: Assets/Scenes/LFase12.unity
+    guid: afeaba82569dd6f4f9dadfa2bcb77fda
+  - enabled: 1
     path: Assets/Scenes/MenuS.unity
     guid: 82ea90674f1c11449892e4478d6780f1
   - enabled: 1

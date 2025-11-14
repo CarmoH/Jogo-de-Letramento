@@ -60,6 +60,17 @@ TagManager:
   - LetraR
   - LetraN
   - LetraJ
+  - LetraC
+  - LetraI
+  - LetraX
+  - LetraV
+  - LetraE
+  - LetraF
+  - LetraG
+  - LetraP
+  - LetraS
+  - LetraT
+  - LetraM
   layers:
   - Default
   - TransparentFX
