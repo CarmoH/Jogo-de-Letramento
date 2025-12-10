@@ -13,22 +13,24 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public bool foiDropValido = false; //Verificar se o objeto foi dropado no Drop
 
-    private void Start()
-    {
-        posicaoOriginal = rt.anchoredPosition; //guarda a posição original
-    }
+    public Canvas canvas;
+
     private void Awake() //chamado automaticamente antes de Start(), quando o objeto é instanciado
     {
         rt = GetComponent<RectTransform>(); //Pega o componente RectTransform do GameObject ao qual o script está anexado.
         grupo = GetComponent<CanvasGroup>(); //Pega o CanvasGroup para permitir alterações na opacidade e interações de clique.
+        posicaoOriginal = rt.anchoredPosition; //guarda a posição original
     }
+   
     public void OnBeginDrag(PointerEventData eventData)
     {
         //Debug.Log("Inicio drag");
         posicaoOriginal = rt.anchoredPosition; //Guarda a posição Original
-        grupo.alpha = 0.3f;
+        grupo.alpha = 0.7f;
         grupo.blocksRaycasts = false; //Faz com que o objeto não bloqueie interações com objetos por trás dele
         foiDropValido = false; // reseta
+
+        rt.SetAsLastSibling();
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -46,9 +48,30 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnDrag(PointerEventData eventData)
     { //eventData.delta: Movimento do ponteiro desde o último frame
+        if (canvas == null)
+        {
+            //Debug.LogError("Canvas NÃO FOI ATRIBUÍDO no inspector!");
+            return;
+        }
 
-        //coloca a minha imagem na posição do mouse está indo
-        rt.anchoredPosition += eventData.delta; // anchoredPosition para mover corretamente dentro do Canvas
+        Vector2 pos;
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            canvas.transform as RectTransform,
+            eventData.position,
+            canvas.worldCamera,
+            out pos))
+        {
+            rt.anchoredPosition = pos;
+        }
+        else
+        {
+            //Debug.Log("Falha na conversão de posição!");
+        }
+
+        // DEBUG
+        // Mostra no Console a posição enquanto arrasta
+        // Isso ajuda a ver se está sendo calculado errado
+        Debug.Log("Pos: " + rt.anchoredPosition);
     }
 
     public void OnPointerDown(PointerEventData eventData)

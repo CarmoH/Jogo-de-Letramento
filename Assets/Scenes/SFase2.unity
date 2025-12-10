@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &61803185
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -405,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &169888812
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1484,6 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &1160299284
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2062,9 +2065,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 100}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2235,6 +2238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &1689217800
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2337,6 +2341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &1738341415
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2439,6 +2444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 1683707393}
 --- !u!225 &1825666769
 CanvasGroup:
   m_ObjectHideFlags: 0

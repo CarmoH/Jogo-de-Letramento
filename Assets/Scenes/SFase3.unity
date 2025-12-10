@@ -1343,9 +1343,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 100}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1534,6 +1534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!225 &885925432
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1711,6 +1712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!225 &1106285750
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1825,6 +1827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!114 &1227034174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,6 +1918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!225 &1272475768
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2427,6 +2431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!225 &1530797690
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2608,6 +2613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foiDropValido: 0
+  canvas: {fileID: 803229100}
 --- !u!225 &1648716198
 CanvasGroup:
   m_ObjectHideFlags: 0
